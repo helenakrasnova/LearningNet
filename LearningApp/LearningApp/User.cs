@@ -1,6 +1,6 @@
 ﻿namespace LearningApp
 {
-    class User
+    public class User
     {
         public User(string n, int a)
         {
