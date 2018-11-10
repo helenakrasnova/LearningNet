@@ -43,6 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin.cs" />
+    <Compile Include="Basket.cs" />
+    <Compile Include="BasketItem.cs" />
+    <Compile Include="HighDiscount.cs" />
+    <Compile Include="IDiscount.cs" />
+    <Compile Include="LowDiscount.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
