@@ -41,6 +41,9 @@ namespace LearningApp
             HighDiscount highDiscount = new HighDiscount();
             basket.ApplyDiscount(highDiscount);
             basket.ShowTotalPrice();
+
+            BasketItem.DisplayCount();
+
             Console.ReadKey();
         }
     }
