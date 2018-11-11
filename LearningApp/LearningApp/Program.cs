@@ -33,8 +33,8 @@ namespace LearningApp
             basket.AddItem(ball);
 
             basket.ShowTotalPrice();
+
             LowDiscount lowDiscount = new LowDiscount();
-            
             basket.ApplyDiscount(lowDiscount);
             basket.ShowTotalPrice();
 
@@ -42,7 +42,19 @@ namespace LearningApp
             basket.ApplyDiscount(highDiscount);
             basket.ShowTotalPrice();
 
+            MegaSaleDiscount megaSaleDiscount = new MegaSaleDiscount();
+            basket.ApplyDiscount(megaSaleDiscount);
+            basket.ShowTotalPrice();
+
+
             BasketItem.DisplayCount();
+            DateTime birthday = new DateTime(1996,5,16);
+            Employee emp1 = new Employee("Bob", birthday, Guid.NewGuid().ToString(),5);
+            emp1.Display();
+
+            DateTime clientBirthday = new DateTime(1993, 5, 31);
+            Client clt1 = new Client("Andrew", clientBirthday, Guid.NewGuid().ToString(), 2);
+            clt1.Display();
 
             Console.ReadKey();
         }
