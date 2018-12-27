@@ -4,6 +4,7 @@ namespace LearningApp
 {
     class BasketItem
     {
+        private string name;
         public static int counter = 0;
         public static void DisplayCount()
         {
@@ -13,7 +14,11 @@ namespace LearningApp
         {
             counter++;
         }
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return name; } 
+            set { name = value; }
+        }
         public decimal Price { get; set; }
     }
 }
