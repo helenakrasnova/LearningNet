@@ -9,7 +9,7 @@ namespace LibraryApp.ServiceLib
     {
         bool AddBook(Book book);
         bool DeleteBook(Guid id);
-        IEnumerable<Book> SearchBook(string title, Genres genre, DateTime publishDate);
+        IEnumerable<Book> SearchBook(string title, Genres genre);
         bool Update(Book book);
         IEnumerable<Book> GetAll();
 

@@ -48,7 +48,7 @@ namespace LibraryApp.ServiceLib
             return _books;
         }
 
-        public IEnumerable<Book> SearchBook(string title, Genres genre, DateTime publishDate)
+        public IEnumerable<Book> SearchBook(string title, Genres genre)
         {
             List<Book> findedBooks = new List<Book>();
             foreach (Book currentBook in _books)
