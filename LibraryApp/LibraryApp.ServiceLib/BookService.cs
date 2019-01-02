@@ -43,9 +43,20 @@ namespace LibraryApp.ServiceLib
             return true;
         }
 
-        public IEnumerable<Book> GetAll()
+        public IEnumerable<Book> Get()
         {
             return _books;
+        }
+        public Book Get(Guid id)
+        {
+            foreach (Book currentBook in _books)
+            {
+                if (currentBook.Id == id)
+                {
+                    return currentBook;
+                }
+            }
+            return null;
         }
 
         public IEnumerable<Book> SearchBook(string title, Genres genre)
@@ -78,7 +89,7 @@ namespace LibraryApp.ServiceLib
                     return false;
                 }
             }
-            return true;
+            return false;
         }
     }
 }

@@ -11,7 +11,8 @@ namespace LibraryApp.ServiceLib
         bool DeleteBook(Guid id);
         IEnumerable<Book> SearchBook(string title, Genres genre);
         bool Update(Book book);
-        IEnumerable<Book> GetAll();
+        IEnumerable<Book> Get();
+        Book Get(Guid Id);
 
     }
 }

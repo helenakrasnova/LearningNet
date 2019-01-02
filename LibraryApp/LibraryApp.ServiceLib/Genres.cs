@@ -9,6 +9,7 @@ namespace LibraryApp.ServiceLib
         Horror,
         Romance,
         Computer,
-        Fantasy
+        Fantasy,
+        Musical
     }
 }
